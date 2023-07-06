@@ -33,22 +33,17 @@ const About = () => {
     <div className="-mt-[6rem]">
       <motion.div variants={textVariant()}>
         {/* <p className={styles.sectionSubText}>Introduction</p> */}
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>
+          Dependable, Fast and Dedicated.
+        </h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]"
       >
-        Ever since I started my journey in Computer Science, I have been
-        fascinated by the endless possibilities that technology offers. I enjoy
-        solving complex problems and building innovative solutions that have a
-        real-world impact. As a full-stack developer, I love the versatility and
-        challenge of working on both the client and server sides of
-        applications. I strive to create seamless user experiences by designing
-        intuitive and responsive user interfaces. At the same time, I focus on
-        developing robust back-end systems that handle data processing, storage,
-        and API integrations.
+        Rapid quotes and quick service, we pride ourselves on making sure you
+        get the serivce you need when you need it.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

@@ -29,16 +29,16 @@ const Contact = () => {
     //click on create a new template then click on save.
     emailjs
       .send(
-        "service_qfjfeyg", // paste your ServiceID here (you'll get one when your service is created).
-        "template_y03oz4h", // paste your TemplateID here (you'll find it under email templates).
+        "service_o5hh3at", // paste your ServiceID here (you'll get one when your service is created).
+        "template_678bwjv", // paste your TemplateID here (you'll find it under email templates).
         {
           from_name: form.name,
           to_name: "Andrew Sandoval", // put your name here.
           from_email: form.email,
-          to_email: "andrews12703@gmail.com", //put your email here.
+          to_email: "throwawaymydude1@gmail.com", //put your email here.
           message: form.message,
         },
-        "qGlRno-DjG4xXsykB" //paste your Public Key here. You'll get it in your profile section.
+        "lUGzl8xZXGEt0VOH4" //paste your Public Key here. You'll get it in your profile section.
       )
       .then(
         () => {
@@ -68,8 +68,9 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-jet p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadTextLight}>Contact.</h3>
+        <h3 className={styles.sectionHeadTextLight}>Contact</h3>
+        <p className={styles.sectionSubText}>Let Us Get you a Quote!</p>
+        <p className={styles.sectionSubText}>Call us at (414)-308-4629</p>
 
         <form
           ref={formRef}
@@ -113,7 +114,7 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What's your message?"
+              placeholder="Let us know what we can do for you!"
               className="bg-eerieBlack py-4 px-6
               placeholder:text-taupe
               text-timberWolf rounded-lg outline-none
